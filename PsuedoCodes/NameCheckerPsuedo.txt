@@ -1,0 +1,13 @@
+BEGIN 
+	Name --> UserInput
+	NameChecker(Name):
+		IF Length(Name) = 5
+			CONTINUE
+		ELSE
+			Name --> UserInput
+			NameChecker(Name)
+		ENDIF
+		ENDIF
+END
+
+			

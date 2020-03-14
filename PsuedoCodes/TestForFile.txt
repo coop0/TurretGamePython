@@ -1,0 +1,10 @@
+BEGIN:
+	emptydict --> {Name: Empty, Points: 0}
+	NewFile(file)
+		write.emptydict To NewFile
+	Try:
+		Open_file Highscores.txt
+	Except:
+		NewFile(file)
+END
+	

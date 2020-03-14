@@ -1,0 +1,17 @@
+BEGIN
+	window --> PygameWindow
+	health --> 100
+	hit --> Collision
+	DOWHILE hit
+		health =health- 20
+		hit --> False
+	IF health = 0
+		GameOver(file,window)
+	ENDIF
+	GameOver(file,window)
+		namepoints --> {Name: Name, Points: Points}
+		file.write(namepoints)
+		window.close()
+		openFile : HighscoresDisplay.py
+END
+		

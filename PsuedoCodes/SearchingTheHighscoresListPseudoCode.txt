@@ -1,0 +1,30 @@
+BEGIN:
+	file --> 'Highscores.txt'
+	temphs --> sorted.file.contents
+	SearchID --> UserInput
+	counter --> 0
+	fori in range(length(temphs))
+		IF SearchID == temphs[i]
+			counter = counter + 1
+			IF counter == 1
+  		 		temp0 --> temphs[i]
+			ENDIF
+			IF counter == 2
+  		 		temp1 --> temphs[i]
+			ENDIF
+			IF counter == 3
+  		 		temp2 --> temphs[i]
+			ENDIF
+			If counter == 4 
+  		 		temp3 --> temphs[i]
+			ENDIF
+			IF counter == 5
+  		 		temp4 --> temphs[i]
+			ENDIF
+	IF counter = True
+		DisplaySearchResultsGui
+	ENDIF
+	IF counter = False
+		DisplayNoResultsGui
+	ENDIF
+END
